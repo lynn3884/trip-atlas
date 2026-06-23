@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" rx="32" fill="#e6ebf0"/>
+  <rect y="540" width="1200" height="360" fill="#7ea0b7"/>
+  <path d="M0 674C150 632 282 625 424 670C550 710 682 724 820 687C965 648 1083 632 1200 650V900H0Z" fill="#47614c"/>
+  <path d="M470 608l142-218 142 218h-66l-34-60h-78l-38 60z" fill="#d8cdbf"/>
+  <path d="M596 428h32v154h-32z" fill="#c1b29d"/>
+  <circle cx="892" cy="176" r="68" fill="#ffd9a7"/>
+  <text x="80" y="112" fill="#ffffff" fill-opacity=".94" font-size="54" font-family="Arial, sans-serif" font-weight="700">Macau</text>
+</svg>

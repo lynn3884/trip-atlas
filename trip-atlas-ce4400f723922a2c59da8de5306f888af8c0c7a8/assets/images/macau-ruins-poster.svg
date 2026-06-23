@@ -1,0 +1,26 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1600" fill="#F6EFE5"/>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="970" cy="240" r="168" fill="#EED8BB"/>
+  <path d="M0 1160C162 1082 325 1048 489 1056C687 1066 826 1132 1200 1038V1600H0V1160Z" fill="#C46D54"/>
+  <path d="M0 1282C169 1204 329 1176 498 1184C733 1194 900 1288 1200 1188V1600H0V1282Z" fill="#9B4E3C"/>
+  <path d="M526 395H676V536H765V1510H438V536H526V395Z" fill="#F4E8D9"/>
+  <path d="M600 255L722 356H478L600 255Z" fill="#C46D54"/>
+  <rect x="556" y="594" width="88" height="152" rx="44" fill="#B6874E"/>
+  <rect x="500" y="826" width="200" height="356" rx="100" fill="#B6874E"/>
+  <rect x="322" y="665" width="118" height="420" rx="59" fill="#F4E8D9"/>
+  <rect x="760" y="665" width="118" height="420" rx="59" fill="#F4E8D9"/>
+  <path d="M322 665C322 590.441 382.441 530 457 530H743C817.559 530 878 590.441 878 665V747H322V665Z" fill="#F4E8D9"/>
+  <path d="M246 1164C287.16 1117.33 336.327 1086.67 393.5 1072C450.673 1057.33 519.493 1050 600 1050C680.507 1050 749.327 1057.33 806.5 1072C863.673 1086.67 912.84 1117.33 954 1164V1510H246V1164Z" fill="#F1DDC6"/>
+  <path d="M440 970L488 908H712L760 970H440Z" fill="#D6A36A"/>
+  <text x="116" y="1292" fill="#FFF7EF" font-family="'Noto Sans TC', sans-serif" font-size="48" letter-spacing="10">MACAO</text>
+  <text x="110" y="1374" fill="#FFF7EF" font-family="'Noto Sans TC', sans-serif" font-size="110" font-weight="700">大三巴</text>
+  <text x="114" y="1450" fill="#FFF7EF" font-family="'Noto Sans TC', sans-serif" font-size="34" letter-spacing="6">RUINS OF ST. PAUL'S</text>
+  <defs>
+    <linearGradient id="bg" x1="600" y1="0" x2="600" y2="1600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F3EB"/>
+      <stop offset="0.55" stop-color="#F2E5D6"/>
+      <stop offset="1" stop-color="#E5D3BF"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "countries": [
+    {
+      "id": "taiwan",
+      "name": "台灣",
+      "slug": "taiwan",
+      "region": "Asia",
+      "summary": "先從熟悉的地方開始，慢慢把每座城市收進旅行清單。",
+      "image": "https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&w=1200&q=80",
+      "pin": { "x": 74, "y": 41 }
+    },
+    {
+      "id": "japan",
+      "name": "日本",
+      "slug": "japan",
+      "region": "Asia",
+      "summary": "城市、街區、咖啡店和老店都很值得慢慢收。",
+      "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80",
+      "pin": { "x": 81, "y": 35 }
+    },
+    {
+      "id": "korea",
+      "name": "韓國",
+      "slug": "korea",
+      "region": "Asia",
+      "summary": "從首爾到釜山，適合用城市節奏慢慢安排。",
+      "image": "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1200&q=80",
+      "pin": { "x": 79, "y": 34 }
+    },
+    {
+      "id": "hong-kong",
+      "name": "香港",
+      "slug": "hong-kong",
+      "region": "Asia",
+      "summary": "密度很高，適合做成短天數高效率旅行。",
+      "image": "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=1200&q=80",
+      "pin": { "x": 73, "y": 45 }
+    },
+    {
+      "id": "macau",
+      "name": "澳門",
+      "slug": "macau",
+      "region": "Asia",
+      "summary": "老城、離島、甜點和在地餐館很適合做成順路旅行。",
+      "image": "https://images.unsplash.com/photo-1571533682037-9f1b0f1120ab?auto=format&fit=crop&w=1200&q=80",
+      "pin": { "x": 72, "y": 46 }
+    },
+    {
+      "id": "thailand",
+      "name": "泰國",
+      "slug": "thailand",
+      "region": "Asia",
+      "summary": "市場、街區和度假城市之間可以慢慢擴充。",
+      "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+      "pin": { "x": 69, "y": 52 }
+    },
+    {
+      "id": "europe",
+      "name": "歐洲",
+      "slug": "europe",
+      "region": "Europe",
+      "summary": "先把城市骨架留好，之後可以一個一個往裡面補。",
+      "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
+      "pin": { "x": 44, "y": 31 }
+    }
+  ],
+  "cities": [
+    { "id": "taipei", "countryId": "taiwan", "name": "台北", "regionLabel": "北部", "slug": "taipei" },
+    { "id": "taichung", "countryId": "taiwan", "name": "台中", "regionLabel": "中部", "slug": "taichung" },
+    { "id": "tainan", "countryId": "taiwan", "name": "台南", "regionLabel": "南部", "slug": "tainan" },
+    { "id": "kaohsiung", "countryId": "taiwan", "name": "高雄", "regionLabel": "南部", "slug": "kaohsiung" },
+    { "id": "hualien", "countryId": "taiwan", "name": "花蓮", "regionLabel": "東部", "slug": "hualien" },
+    { "id": "taitung", "countryId": "taiwan", "name": "台東", "regionLabel": "東部", "slug": "taitung" },
+    { "id": "tokyo", "countryId": "japan", "name": "東京", "regionLabel": "關東", "slug": "tokyo" },
+    { "id": "osaka", "countryId": "japan", "name": "大阪", "regionLabel": "關西", "slug": "osaka" },
+    { "id": "kyoto", "countryId": "japan", "name": "京都", "regionLabel": "關西", "slug": "kyoto" },
+    { "id": "okinawa", "countryId": "japan", "name": "沖繩", "regionLabel": "沖繩", "slug": "okinawa" },
+    { "id": "hokkaido", "countryId": "japan", "name": "北海道", "regionLabel": "北海道", "slug": "hokkaido" },
+    { "id": "seoul", "countryId": "korea", "name": "首爾", "regionLabel": "首都圈", "slug": "seoul" },
+    { "id": "busan", "countryId": "korea", "name": "釜山", "regionLabel": "慶尚道", "slug": "busan" },
+    { "id": "hong-kong-city", "countryId": "hong-kong", "name": "香港", "regionLabel": "香港", "slug": "hong-kong" },
+    { "id": "macau-peninsula", "countryId": "macau", "name": "澳門半島", "regionLabel": "澳門", "slug": "macau-peninsula" },
+    { "id": "taipa", "countryId": "macau", "name": "氹仔", "regionLabel": "澳門", "slug": "taipa" },
+    { "id": "coloane", "countryId": "macau", "name": "路環", "regionLabel": "澳門", "slug": "coloane" },
+    { "id": "bangkok", "countryId": "thailand", "name": "曼谷", "regionLabel": "中部", "slug": "bangkok" },
+    { "id": "paris", "countryId": "europe", "name": "巴黎", "regionLabel": "法國", "slug": "paris" },
+    { "id": "rome", "countryId": "europe", "name": "羅馬", "regionLabel": "義大利", "slug": "rome" },
+    { "id": "london", "countryId": "europe", "name": "倫敦", "regionLabel": "英國", "slug": "london" }
+  ],
+  "categories": [
+    { "id": "historic", "name": "古蹟", "slug": "historic" },
+    { "id": "museum", "name": "博物館", "slug": "museum" },
+    { "id": "nature", "name": "自然景點", "slug": "nature" },
+    { "id": "street", "name": "街區散步", "slug": "street" },
+    { "id": "temple", "name": "寺廟", "slug": "temple" },
+    { "id": "seaside", "name": "海邊", "slug": "seaside" },
+    { "id": "art-park", "name": "文創園區", "slug": "art-park" },
+    { "id": "landmark", "name": "城市地標", "slug": "landmark" }
+  ]
+}

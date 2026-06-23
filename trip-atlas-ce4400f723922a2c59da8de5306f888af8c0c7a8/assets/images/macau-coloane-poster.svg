@@ -1,0 +1,25 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="952" cy="232" r="150" fill="#F7D8AF"/>
+  <path d="M0 1134C171 1084 330 1068 478 1086C712 1115 866 1202 1200 1120V1600H0V1134Z" fill="#6FB2A1"/>
+  <path d="M0 1268C188 1218 351 1204 490 1222C738 1254 900 1350 1200 1264V1600H0V1268Z" fill="#3F877B"/>
+  <path d="M296 1016C344 896 454 816 588 816C722 816 832 896 880 1016H296Z" fill="#BEE1D8"/>
+  <rect x="416" y="568" width="344" height="438" rx="26" fill="#F8F4EE"/>
+  <path d="M588 436L772 568H404L588 436Z" fill="#E28266"/>
+  <rect x="560" y="664" width="56" height="342" fill="#E7B15F"/>
+  <rect x="488" y="740" width="200" height="204" rx="96" fill="#F1D5A2"/>
+  <rect x="452" y="624" width="80" height="130" rx="40" fill="#3F877B"/>
+  <rect x="644" y="624" width="80" height="130" rx="40" fill="#3F877B"/>
+  <path d="M160 1106C240 1080 328 1062 424 1052C520 1042 624 1042 736 1052C848 1062 960 1080 1072 1106" stroke="#F7F0E5" stroke-width="16" stroke-linecap="round"/>
+  <path d="M170 1168C306 1128 446 1108 590 1108C734 1108 882 1128 1034 1168" stroke="#F7F0E5" stroke-width="12" stroke-linecap="round"/>
+  <text x="114" y="1288" fill="#FFF7EF" font-family="'Noto Sans TC', sans-serif" font-size="48" letter-spacing="10">COLOANE</text>
+  <text x="110" y="1370" fill="#FFF7EF" font-family="'Noto Sans TC', sans-serif" font-size="104" font-weight="700">路環散步</text>
+  <text x="114" y="1444" fill="#FFF7EF" font-family="'Noto Sans TC', sans-serif" font-size="34" letter-spacing="6">WALK BY THE SEA</text>
+  <defs>
+    <linearGradient id="bg" x1="600" y1="0" x2="600" y2="1600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7EF"/>
+      <stop offset="0.58" stop-color="#D6EEE7"/>
+      <stop offset="1" stop-color="#B4D8CF"/>
+    </linearGradient>
+  </defs>
+</svg>

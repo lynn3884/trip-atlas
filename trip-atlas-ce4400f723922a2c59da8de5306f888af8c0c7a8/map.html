@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的旅遊地圖｜Trip Atlas</title>
+  <meta name="description" content="把已經收藏的城市與景點，慢慢長成自己的旅行足跡。">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body data-page="map">
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-box">
+      <h2>探索世界中...</h2>
+      <p>把收藏城市慢慢拼成你的旅行足跡。</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <main class="page-shell">
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand" id="brandButton" role="button" tabindex="0" aria-label="Trip Atlas Logo">
+          <img class="brand__mark" src="./assets/images/brand-cats.svg" alt="兩隻旅行貓">
+          <div class="brand__text">
+            <strong>Trip Atlas</strong>
+            <span>旅行收藏庫</span>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="主要導航">
+          <a class="nav-link" href="./index.html"><span class="nav-link__icon">⌂</span>首頁</a>
+          <a class="nav-link" href="./explore.html"><span class="nav-link__icon">✦</span>景點</a>
+          <a class="nav-link" href="./favorites.html"><span class="nav-link__icon">♥</span>我的清單</a>
+          <a class="nav-link is-active" href="./map.html"><span class="nav-link__icon">◌</span>我的旅遊地圖</a>
+          <a class="nav-link" href="./planner.html"><span class="nav-link__icon">⋯</span>行程規劃</a>
+          <a class="nav-link" href="./settings.html"><span class="nav-link__icon">⚙</span>設定</a>
+        </nav>
+
+        <div class="sidebar-note">
+          <h3>旅行足跡</h3>
+          <p>每一個收藏城市，都像地圖上的一枚小標記，慢慢連成自己的路線。</p>
+        </div>
+      </aside>
+
+      <section class="main-column map-layout">
+        <section class="page-header map-page-header">
+          <span class="page-header__eyebrow">Footprints</span>
+          <h1>我的旅遊地圖</h1>
+          <p>想去的城市、留下的景點，會在這張地圖上慢慢長出自己的節奏。</p>
+        </section>
+
+        <section class="section-card map-stage-card">
+          <div class="section-head">
+            <div>
+              <h2>城市足跡</h2>
+              <p>先看地圖，再回頭看每個城市裡放了哪些地方。</p>
+            </div>
+          </div>
+          <div class="map-card map-card--feature">
+            <div class="map-canvas map-canvas--feature" id="travelMapPins">
+              <img src="./assets/images/world-map-soft.svg" alt="世界地圖">
+            </div>
+            <div class="map-legend">
+              <span><i style="background:#2f8077;"></i>已去過</span>
+              <span><i style="background:#ef7f36;"></i>想去</span>
+              <span><i style="background:#7a63c5;"></i>規劃中</span>
+            </div>
+            <div class="map-note-list" id="travelMapNotes"></div>
+          </div>
+        </section>
+
+        <section class="section-card">
+          <div class="section-head">
+            <div>
+              <h2>收藏城市</h2>
+              <p>每個城市都帶著幾個代表景點，像翻自己的旅行足跡頁。</p>
+            </div>
+          </div>
+          <div class="footprint-grid" id="mapFootprintList"></div>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <nav class="mobile-nav" aria-label="手機版導航">
+    <a href="./index.html"><span>⌂</span><span>首頁</span></a>
+    <a href="./explore.html"><span>✦</span><span>景點</span></a>
+    <a href="./favorites.html"><span>♥</span><span>清單</span></a>
+    <a class="is-active" href="./map.html"><span>◌</span><span>足跡</span></a>
+    <a href="./planner.html"><span>⋯</span><span>規劃</span></a>
+    <a href="./settings.html"><span>⚙</span><span>設定</span></a>
+  </nav>
+
+  <script src="./assets/data.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

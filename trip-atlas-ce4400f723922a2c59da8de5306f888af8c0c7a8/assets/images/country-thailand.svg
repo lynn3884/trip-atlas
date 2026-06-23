@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" rx="32" fill="#e8ddcf"/>
+  <rect y="530" width="1200" height="370" fill="#85a36b"/>
+  <path d="M0 674C127 641 246 633 392 672C543 712 684 722 838 686C976 653 1090 638 1200 651V900H0Z" fill="#56714c"/>
+  <path d="M512 612l88-188 88 188h-38l-12-36h-76l-12 36z" fill="#c2944f"/>
+  <path d="M548 564h104l-52-88z" fill="#e0c574"/>
+  <circle cx="246" cy="184" r="72" fill="#ffd8a0"/>
+  <text x="80" y="112" fill="#ffffff" fill-opacity=".94" font-size="54" font-family="Arial, sans-serif" font-weight="700">Thailand</text>
+</svg>

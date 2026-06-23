@@ -1,0 +1,30 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="936" cy="244" r="164" fill="#F5D798"/>
+  <path d="M0 1218C164 1136 334 1102 510 1116C676 1129 855 1197 1200 1110V1600H0V1218Z" fill="#2E7C73"/>
+  <path d="M0 1322C136 1262 309 1240 518 1254C700 1266 886 1326 1200 1248V1600H0V1322Z" fill="#1D5C57"/>
+  <rect x="228" y="644" width="230" height="398" rx="18" fill="#F8F3EB"/>
+  <rect x="480" y="572" width="250" height="470" rx="18" fill="#FDF8F2"/>
+  <rect x="752" y="690" width="220" height="352" rx="18" fill="#F7F0E4"/>
+  <rect x="260" y="708" width="72" height="120" rx="36" fill="#2E7C73"/>
+  <rect x="352" y="708" width="72" height="120" rx="36" fill="#2E7C73"/>
+  <rect x="540" y="648" width="76" height="126" rx="38" fill="#D57959"/>
+  <rect x="628" y="648" width="76" height="126" rx="38" fill="#D57959"/>
+  <rect x="804" y="748" width="58" height="102" rx="29" fill="#2E7C73"/>
+  <rect x="884" y="748" width="58" height="102" rx="29" fill="#2E7C73"/>
+  <path d="M214 640L344 534L474 640H214Z" fill="#D57959"/>
+  <path d="M466 568L606 438L746 568H466Z" fill="#C15D40"/>
+  <path d="M738 686L862 598L986 686H738Z" fill="#E39C46"/>
+  <rect x="540" y="836" width="164" height="206" rx="82" fill="#E39C46"/>
+  <path d="M104 1168H1096" stroke="#EEDCCB" stroke-width="20" stroke-linecap="round"/>
+  <text x="112" y="1288" fill="#FFF7EF" font-family="'Noto Sans TC', sans-serif" font-size="48" letter-spacing="10">TAIPA</text>
+  <text x="110" y="1370" fill="#FFF7EF" font-family="'Noto Sans TC', sans-serif" font-size="104" font-weight="700">氹仔老城</text>
+  <text x="114" y="1444" fill="#FFF7EF" font-family="'Noto Sans TC', sans-serif" font-size="34" letter-spacing="6">OLD VILLAGE WALK</text>
+  <defs>
+    <linearGradient id="bg" x1="600" y1="0" x2="600" y2="1600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9F1"/>
+      <stop offset="0.6" stop-color="#F6E1C4"/>
+      <stop offset="1" stop-color="#EAC8A9"/>
+    </linearGradient>
+  </defs>
+</svg>

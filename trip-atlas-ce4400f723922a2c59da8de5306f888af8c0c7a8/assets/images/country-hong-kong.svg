@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" rx="32" fill="#d8e3f0"/>
+  <rect y="510" width="1200" height="390" fill="#4d7aa2"/>
+  <path d="M0 704C126 658 229 645 376 688C531 735 650 744 807 710C946 680 1080 656 1200 669V900H0Z" fill="#304a37"/>
+  <rect x="722" y="232" width="66" height="328" rx="12" fill="#44576c"/>
+  <rect x="814" y="182" width="54" height="378" rx="12" fill="#3d5168"/>
+  <rect x="898" y="268" width="74" height="292" rx="12" fill="#506579"/>
+  <circle cx="240" cy="182" r="72" fill="#f7d6a2"/>
+  <text x="80" y="112" fill="#ffffff" fill-opacity=".94" font-size="54" font-family="Arial, sans-serif" font-weight="700">Hong Kong</text>
+</svg>

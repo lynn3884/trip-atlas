@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的清單｜Trip Atlas</title>
+  <meta name="description" content="把最近收藏的景點，像明信片一樣收進自己的旅行冊。">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body data-page="favorites">
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-box">
+      <h2>探索世界中...</h2>
+      <p>把你最近留下來的收藏整理成一面旅行牆。</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <main class="page-shell">
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand" id="brandButton" role="button" tabindex="0" aria-label="Trip Atlas Logo">
+          <img class="brand__mark" src="./assets/images/brand-cats.svg" alt="兩隻旅行貓">
+          <div class="brand__text">
+            <strong>Trip Atlas</strong>
+            <span>旅行收藏庫</span>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="主要導航">
+          <a class="nav-link" href="./index.html"><span class="nav-link__icon">⌂</span>首頁</a>
+          <a class="nav-link" href="./explore.html"><span class="nav-link__icon">✦</span>景點</a>
+          <a class="nav-link is-active" href="./favorites.html"><span class="nav-link__icon">♥</span>我的清單</a>
+          <a class="nav-link" href="./map.html"><span class="nav-link__icon">◌</span>我的旅遊地圖</a>
+          <a class="nav-link" href="./planner.html"><span class="nav-link__icon">⋯</span>行程規劃</a>
+          <a class="nav-link" href="./settings.html"><span class="nav-link__icon">⚙</span>設定</a>
+        </nav>
+
+        <div class="sidebar-note">
+          <h3>我的清單</h3>
+          <p>把想去的地方先留下來，之後再慢慢排成一趟旅行。</p>
+        </div>
+      </aside>
+
+      <section class="main-column favorites-layout">
+        <section class="page-header favorites-page-header">
+          <span class="page-header__eyebrow">Saved Places</span>
+          <h1>我的清單</h1>
+          <p>最近收藏的地方，像明信片一樣，一張張留在這裡。</p>
+        </section>
+
+        <section class="section-card favorites-hero-card">
+          <div class="section-head favorites-inline-head">
+            <div>
+              <h2>最近收進來的</h2>
+              <p>留住想去的地方，回頭排起來會更順。</p>
+            </div>
+            <strong class="home-count" id="favoriteCount">0</strong>
+          </div>
+          <div class="favorite-list favorite-list--wide" id="favoriteRecent"></div>
+        </section>
+
+        <section class="section-card">
+          <div class="section-head">
+            <div>
+              <h2>收藏牆</h2>
+              <p>想去的景點都放在這裡，點開就能看完整資訊。</p>
+            </div>
+          </div>
+          <div class="favorites-shelf" id="favoritesShelf"></div>
+        </section>
+
+        <div class="favorites-groups">
+          <section class="section-card">
+            <div class="section-head">
+              <div>
+                <h2>按城市整理</h2>
+                <p>看看哪些城市，已經慢慢長成一張清單。</p>
+              </div>
+            </div>
+            <div class="archive-grid" id="favoritesByCity"></div>
+          </section>
+
+          <section class="section-card">
+            <div class="section-head">
+              <div>
+                <h2>按類型整理</h2>
+                <p>古蹟、街區、自然景，慢慢看出自己的旅行偏好。</p>
+              </div>
+            </div>
+            <div class="archive-grid" id="favoritesByCategory"></div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <nav class="mobile-nav" aria-label="手機版導航">
+    <a href="./index.html"><span>⌂</span><span>首頁</span></a>
+    <a href="./explore.html"><span>✦</span><span>景點</span></a>
+    <a class="is-active" href="./favorites.html"><span>♥</span><span>清單</span></a>
+    <a href="./map.html"><span>◌</span><span>足跡</span></a>
+    <a href="./planner.html"><span>⋯</span><span>規劃</span></a>
+    <a href="./settings.html"><span>⚙</span><span>設定</span></a>
+  </nav>
+
+  <script src="./assets/data.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

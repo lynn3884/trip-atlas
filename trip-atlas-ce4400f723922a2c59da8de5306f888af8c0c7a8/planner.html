@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>旅行收納箱｜Trip Atlas</title>
+  <meta name="description" content="先把零散靈感收進來，再慢慢整理成下一段旅行。">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body data-page="planner">
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-box">
+      <h2>探索世界中...</h2>
+      <p>把你想留下的資料先收一輪。</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <main class="page-shell">
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand" id="brandButton" role="button" tabindex="0" aria-label="Trip Atlas Logo">
+          <img class="brand__mark" src="./assets/images/brand-cats.svg" alt="兩隻旅行貓">
+          <div class="brand__text">
+            <strong>Trip Atlas</strong>
+            <span>旅行收藏庫</span>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="主要導航">
+          <a class="nav-link" href="./index.html"><span class="nav-link__icon">⌂</span>首頁</a>
+          <a class="nav-link" href="./explore.html"><span class="nav-link__icon">✦</span>景點</a>
+          <a class="nav-link" href="./favorites.html"><span class="nav-link__icon">♥</span>我的清單</a>
+          <a class="nav-link" href="./map.html"><span class="nav-link__icon">◌</span>我的旅遊地圖</a>
+          <a class="nav-link is-active" href="./planner.html"><span class="nav-link__icon">⋯</span>行程規劃</a>
+          <a class="nav-link" href="./settings.html"><span class="nav-link__icon">⚙</span>設定</a>
+        </nav>
+
+        <div class="sidebar-note">
+          <h3>旅行收納箱</h3>
+          <p>想到什麼先記下來，之後再慢慢整理成行程。</p>
+        </div>
+      </aside>
+
+      <section class="main-column planner-layout">
+        <section class="page-header planner-page-header">
+          <span class="page-header__eyebrow">Travel Drawer</span>
+          <h1>行程規劃</h1>
+          <p>先把網址、地址、靈感和備註放進來，之後再決定怎麼走。</p>
+        </section>
+
+        <section class="planner-card planner-workspace">
+          <div class="section-head">
+            <div>
+              <h2>先收進來</h2>
+              <p>把零散資訊收在一起，之後排路線會更順。</p>
+            </div>
+          </div>
+
+          <div class="planner-grid planner-grid--ui30">
+            <form class="collector-form planner-form-card" id="collectorForm">
+              <div class="collector-row">
+                <input class="collector-input" type="text" name="title" placeholder="先寫一個標題，例如：東京鐵塔夜景">
+                <select class="collector-select" name="type">
+                  <option value="景點">景點</option>
+                  <option value="小吃">小吃</option>
+                  <option value="住宿">住宿</option>
+                  <option value="靈感">靈感</option>
+                </select>
+              </div>
+              <div class="collector-row">
+                <input class="collector-input" type="text" name="country" placeholder="國家 / 地區">
+                <input class="collector-input" type="text" name="city" placeholder="城市 / 地區">
+              </div>
+              <textarea class="collector-textarea" name="note" placeholder="可貼上網址、地址、營業時間、為什麼想去，或任何之後想回頭整理的資訊"></textarea>
+              <div>
+                <button class="primary-button" type="submit">放進收納箱</button>
+              </div>
+            </form>
+
+            <div class="planner-side-column">
+              <div class="collector-note planner-note-card">
+                <h4>最近收進來的</h4>
+                <p>先留下來，之後再慢慢挑出真正要排進旅行的內容。</p>
+              </div>
+              <div class="saved-list" id="savedCollectorList"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <aside class="rail-column planner-rail">
+        <section class="rail-card planner-rail-card">
+          <h3>旅行收納箱</h3>
+          <p>現在先收，之後再排，不用一次決定完整路線。</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <nav class="mobile-nav" aria-label="手機版導航">
+    <a href="./index.html"><span>⌂</span><span>首頁</span></a>
+    <a href="./explore.html"><span>✦</span><span>景點</span></a>
+    <a href="./favorites.html"><span>♥</span><span>清單</span></a>
+    <a href="./map.html"><span>◌</span><span>足跡</span></a>
+    <a class="is-active" href="./planner.html"><span>⋯</span><span>規劃</span></a>
+    <a href="./settings.html"><span>⚙</span><span>設定</span></a>
+  </nav>
+
+  <script src="./assets/data.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

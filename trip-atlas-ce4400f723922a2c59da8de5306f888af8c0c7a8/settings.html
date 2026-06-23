@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的旅行資料｜Trip Atlas</title>
+  <meta name="description" content="查看你留下來的旅行資料與收藏摘要。">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body data-page="settings">
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-box">
+      <h2>探索世界中...</h2>
+      <p>把你的本機收藏整理乾淨。</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <main class="page-shell">
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand" id="brandButton" role="button" tabindex="0" aria-label="Trip Atlas Logo">
+          <img class="brand__mark" src="./assets/images/brand-cats.svg" alt="兩隻旅行貓">
+          <div class="brand__text">
+            <strong>Trip Atlas</strong>
+            <span>旅行收藏庫</span>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="主要導航">
+          <a class="nav-link" href="./index.html"><span class="nav-link__icon">⌂</span>首頁</a>
+          <a class="nav-link" href="./explore.html"><span class="nav-link__icon">✦</span>景點</a>
+          <a class="nav-link" href="./favorites.html"><span class="nav-link__icon">♥</span>我的清單</a>
+          <a class="nav-link" href="./map.html"><span class="nav-link__icon">◌</span>我的旅遊地圖</a>
+          <a class="nav-link" href="./planner.html"><span class="nav-link__icon">⋯</span>行程規劃</a>
+          <a class="nav-link is-active" href="./settings.html"><span class="nav-link__icon">⚙</span>設定</a>
+        </nav>
+
+        <div class="sidebar-note">
+          <h3>我的旅行資料</h3>
+          <p>常看的資料、收藏和整理中的清單，都留在這裡。</p>
+        </div>
+      </aside>
+
+      <section class="main-column settings-layout">
+        <section class="page-header settings-page-header">
+          <span class="page-header__eyebrow">My Travel Archive</span>
+          <h1>我的旅行資料</h1>
+          <p>景點、收藏與整理中的筆記，都留在這裡，打開就能接著看。</p>
+        </section>
+
+        <section class="settings-card settings-overview-card">
+          <div class="section-head">
+            <div>
+              <h2>這次留下的資料</h2>
+              <p>最近收進來的內容，都在這一頁。</p>
+            </div>
+          </div>
+
+          <div class="settings-grid settings-grid--ui30">
+            <article class="settings-card settings-panel">
+              <h3>收進來的內容</h3>
+              <ul id="localSummary"></ul>
+            </article>
+
+            <article class="settings-card settings-panel">
+              <h3>這裡會留下什麼</h3>
+              <ul class="settings-note-list">
+                <li>收藏會留在這台裝置裡。</li>
+                <li>景點、清單與整理資料會一起更新。</li>
+                <li>想重新整理時，可以直接清空。</li>
+              </ul>
+            </article>
+
+            <article class="settings-card settings-panel">
+              <h3>想重新開始</h3>
+              <p>想把這本旅行冊整理乾淨，就從這裡開始。</p>
+              <div class="button-row">
+                <button class="ghost-button" id="clearFavorites" type="button">清空收藏</button>
+                <button class="ghost-button" id="clearCollector" type="button">清空整理資料</button>
+              </div>
+            </article>
+
+            <article class="settings-card settings-panel">
+              <h3>現在怎麼保存</h3>
+              <p>目前以本機收藏與整理清單為主，打開就能接著用。</p>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <aside class="rail-column settings-rail">
+        <section class="rail-card settings-rail-card">
+          <h3>旅行資料頁</h3>
+          <p>把常回頭看的資料留在同一頁，會比管理面板更像自己的旅行冊。</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <nav class="mobile-nav" aria-label="手機版導航">
+    <a href="./index.html"><span>⌂</span><span>首頁</span></a>
+    <a href="./explore.html"><span>✦</span><span>景點</span></a>
+    <a href="./favorites.html"><span>♥</span><span>清單</span></a>
+    <a href="./map.html"><span>◌</span><span>足跡</span></a>
+    <a href="./planner.html"><span>⋯</span><span>規劃</span></a>
+    <a class="is-active" href="./settings.html"><span>⚙</span><span>設定</span></a>
+  </nav>
+
+  <script src="./assets/data.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "Trip Atlas",
+  "short_name": "Trip Atlas",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7f1e8",
+  "theme_color": "#ef7f36",
+  "lang": "zh-Hant",
+  "description": "自己的旅行靈感庫、景點收藏與規劃網站。"
+}
