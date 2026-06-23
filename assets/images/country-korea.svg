@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" rx="32" fill="#dfe4f2"/>
+  <rect y="518" width="1200" height="382" fill="#6f89a6"/>
+  <path d="M0 658C120 629 242 628 382 665C517 699 636 709 784 676C931 643 1070 617 1200 633V900H0Z" fill="#3d5240"/>
+  <path d="M324 566l156-110 156 110-50 0 0 126-212 0 0-126z" fill="#5c4a43"/>
+  <path d="M288 590l192-136 192 136z" fill="#a36856"/>
+  <rect x="446" y="620" width="66" height="72" fill="#f0e8db"/>
+  <circle cx="920" cy="176" r="68" fill="#f7d9a0"/>
+  <text x="80" y="112" fill="#ffffff" fill-opacity=".94" font-size="54" font-family="Arial, sans-serif" font-weight="700">Korea</text>
+</svg>

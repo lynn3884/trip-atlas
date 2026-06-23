@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" rx="32" fill="#d8eaf5"/>
+  <rect y="520" width="1200" height="380" fill="#6b98be"/>
+  <path d="M0 646C113 607 258 587 413 637C553 683 670 707 819 670C977 631 1090 610 1200 626V900H0Z" fill="#395d46"/>
+  <rect x="770" y="225" width="90" height="350" rx="18" fill="#3f576a"/>
+  <rect x="792" y="154" width="46" height="88" rx="12" fill="#3f576a"/>
+  <rect x="783" y="308" width="64" height="12" fill="#8eb3cf"/>
+  <rect x="783" y="372" width="64" height="12" fill="#8eb3cf"/>
+  <rect x="783" y="436" width="64" height="12" fill="#8eb3cf"/>
+  <circle cx="215" cy="188" r="70" fill="#ffddaf"/>
+  <text x="78" y="112" fill="#ffffff" fill-opacity=".94" font-size="54" font-family="Arial, sans-serif" font-weight="700">Taiwan</text>
+</svg>

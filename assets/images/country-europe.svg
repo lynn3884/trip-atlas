@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" rx="32" fill="#d8dfe7"/>
+  <rect y="516" width="1200" height="384" fill="#7690a3"/>
+  <path d="M0 694C126 657 253 649 395 689C534 729 651 742 810 710C954 681 1080 659 1200 674V900H0Z" fill="#4d6049"/>
+  <rect x="544" y="276" width="120" height="294" rx="16" fill="#d8c6ad"/>
+  <path d="M512 302h184v42h-184z" fill="#c2ae93"/>
+  <path d="M496 356h216v46h-216z" fill="#cfbea7"/>
+  <path d="M520 564h168v44h-168z" fill="#b69a79"/>
+  <circle cx="236" cy="184" r="72" fill="#ffe0af"/>
+  <text x="80" y="112" fill="#ffffff" fill-opacity=".94" font-size="54" font-family="Arial, sans-serif" font-weight="700">Europe</text>
+</svg>

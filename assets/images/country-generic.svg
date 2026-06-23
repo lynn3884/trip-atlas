@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9ec2d9"/>
+      <stop offset="100%" stop-color="#f3e2cf"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="32" fill="url(#g1)"/>
+  <rect y="450" width="1200" height="450" fill="#5c8cab"/>
+  <path d="M0 614C138 570 256 555 388 602C524 651 648 673 795 628C935 586 1041 557 1200 587V900H0Z" fill="#567a4f" opacity=".78"/>
+  <path d="M0 692C179 645 301 651 435 702C568 752 679 762 825 724C962 690 1065 673 1200 699V900H0Z" fill="#355642"/>
+  <text x="80" y="118" fill="#ffffff" fill-opacity=".92" font-size="54" font-family="Arial, sans-serif" font-weight="700">Travel</text>
+</svg>

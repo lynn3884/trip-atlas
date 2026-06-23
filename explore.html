@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>景點收藏牆｜Trip Atlas</title>
+  <meta name="description" content="像翻旅行收藏牆一樣，慢慢看每一個想去的景點。">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body data-page="explore">
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-box">
+      <h2>整理景點中...</h2>
+      <p>先把目前的景點資料讀進來，等一下就可以直接查。</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <main class="page-shell">
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand" id="brandButton" role="button" tabindex="0" aria-label="Trip Atlas Logo">
+          <img class="brand__mark" src="./assets/images/brand-cats.svg" alt="Trip Atlas Logo">
+          <div class="brand__text">
+            <strong>Trip Atlas</strong>
+            <span>旅行靈感庫，先從景點開始。</span>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="主要導覽">
+          <a class="nav-link" href="./index.html"><span class="nav-link__icon">⌂</span>首頁</a>
+          <a class="nav-link is-active" href="./explore.html"><span class="nav-link__icon">◆</span>景點</a>
+          <a class="nav-link" href="./favorites.html"><span class="nav-link__icon">♥</span>我的清單</a>
+          <a class="nav-link" href="./map.html"><span class="nav-link__icon">◌</span>我的旅遊地圖</a>
+          <a class="nav-link" href="./planner.html"><span class="nav-link__icon">✦</span>行程規劃</a>
+          <a class="nav-link" href="./settings.html"><span class="nav-link__icon">⚙</span>設定</a>
+        </nav>
+      </aside>
+
+      <section class="main-column collection-layout">
+        <section class="page-header collection-page-header">
+          <span class="page-header__eyebrow">景點收藏</span>
+          <h1>景點</h1>
+          <p>像翻旅行收藏牆一樣，慢慢找到下一個想去的地方。</p>
+        </section>
+
+        <section class="top-filters collection-filter-panel">
+          <div class="hero-chips" id="exploreQuickFilters">
+            <button class="chip chip-button is-active" type="button" data-quick-city="">全部</button>
+            <button class="chip chip-button" type="button" data-quick-city="tainan">台南</button>
+            <button class="chip chip-button" type="button" data-quick-city="taipei">台北</button>
+          </div>
+          <div class="filter-grid">
+            <input class="filter-control" id="exploreSearchInput" type="text" placeholder="搜尋景點名稱、城市或分類">
+            <select class="filter-control" id="filterCountry"></select>
+            <select class="filter-control" id="filterCity"></select>
+            <select class="filter-control" id="filterCategory"></select>
+          </div>
+          <div class="explore-toolbar">
+            <div class="filter-tags" id="activeFilterTags"></div>
+            <button class="ghost-button" id="clearExploreFilters" type="button">清除篩選</button>
+          </div>
+        </section>
+
+        <section class="directory-panel collection-results-panel">
+          <div class="directory-panel__header">
+            <div>
+              <h2 class="directory-title">景點收藏牆</h2>
+              <p class="section-subtext">看喜歡的先收藏，詳細資料再點開慢慢看。</p>
+            </div>
+            <div class="result-summary" id="directorySummary"></div>
+          </div>
+          <div class="spot-grid" id="directoryResults"></div>
+        </section>
+      </section>
+
+      <aside class="rail-column collection-rail">
+        <section class="rail-card collection-rail-card">
+          <h3>挑下一站</h3>
+          <p>先看圖片和城市，再決定要不要放進自己的清單。</p>
+        </section>
+
+        <section class="rail-card collection-rail-card">
+          <h3>慢慢縮小範圍</h3>
+          <p>先搜名字，或用國家、城市、分類慢慢挑。</p>
+          <div class="section-subtext" style="margin-top:12px;">
+            <a class="mini-link" href="./favorites.html">查看我的收藏</a>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <nav class="mobile-nav" aria-label="手機導覽">
+    <a href="./index.html"><span>⌂</span><span>首頁</span></a>
+    <a class="is-active" href="./explore.html"><span>◆</span><span>景點</span></a>
+    <a href="./favorites.html"><span>♥</span><span>清單</span></a>
+    <a href="./map.html"><span>◌</span><span>足跡</span></a>
+    <a href="./planner.html"><span>⋯</span><span>規劃</span></a>
+    <a href="./settings.html"><span>⚙</span><span>設定</span></a>
+  </nav>
+
+  <script src="./assets/data.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
