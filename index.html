@@ -25,7 +25,7 @@
     <div class="layout">
       <aside class="sidebar">
         <div class="brand" id="brandButton" role="button" tabindex="0" aria-label="Trip Atlas Logo">
-          <img class="brand__mark" src="./assets/images/brand-cats.svg" alt="Trip Atlas Logo">
+          <img class="brand__mark" src="./assets/images/brand-cats.svg?v=20260623b" alt="Trip Atlas Logo">
           <div class="brand__text">
             <strong>Trip Atlas</strong>
             <span>收藏世界，收進美好</span>
@@ -47,7 +47,7 @@
             <h3>準備好出發了嗎？</h3>
             <p>把想去的地方先收進來，下一次安排行程會更輕鬆。</p>
           </div>
-          <img class="sidebar-promo__cats" src="./assets/images/brand-cats.svg" alt="Trip Atlas Cats">
+          <img class="sidebar-promo__cats" src="./assets/images/brand-cats.svg?v=20260623b" alt="Trip Atlas Cats">
           <a class="sidebar-promo__button" href="./explore.html">開始探索</a>
         </div>
       </aside>
@@ -132,7 +132,7 @@
                 <p>先存起來，等到真的出發時會省很多事。</p>
                 <div id="collectorPreview"></div>
               </div>
-              <a class="primary-button home-collector-banner__button" href="./planner.html">新增到清單</a>
+              <a class="primary-button home-collector-banner__button" href="./planner.html">打開收藏冊 →</a>
             </section>
           </div>
 
@@ -140,7 +140,7 @@
             <section class="section-card home-scrapbook-card" id="favorites">
               <div class="section-head home-section-head home-section-head--compact">
                 <div>
-                  <h2>最近收進來的</h2>
+                  <h2>收藏冊</h2>
                 </div>
                 <a class="mini-link" href="./favorites.html">查看全部 (<span id="favoriteCount">0</span>)</a>
               </div>
@@ -152,13 +152,13 @@
                 <span class="home-list-tab">行程</span>
               </div>
               <div class="favorite-list" id="favoriteRecent"></div>
-              <a class="secondary-button home-panel-button" href="./favorites.html">打開我的清單</a>
+              <a class="secondary-button home-panel-button" href="./favorites.html">打開收藏冊 →</a>
             </section>
 
             <section class="section-card home-map-section" id="travel-map">
               <div class="section-head home-section-head home-section-head--compact">
                 <div>
-                  <h2>我的旅遊地圖</h2>
+                  <h2>旅遊地圖</h2>
                 </div>
                 <a class="mini-link" href="./map.html">查看全部</a>
               </div>
@@ -178,7 +178,7 @@
             <section class="section-card home-stats-section">
               <div class="section-head home-section-head home-section-head--compact">
                 <div>
-                  <h2>旅行統計</h2>
+                  <h2>旅行足跡</h2>
                 </div>
               </div>
               <div class="stat-grid" id="statsGrid"></div>
@@ -200,5 +200,43 @@
 
   <script src="./assets/data.js"></script>
   <script src="./assets/app.js"></script>
+  <script>
+    (() => {
+      const syncHomeCopy = () => {
+        const collectorTitle = document.querySelector(".home-collector-banner__body h2");
+        const collectorText = document.querySelector(".home-collector-banner__body p");
+        const collectorButton = document.querySelector(".home-collector-banner__button");
+        const panelButton = document.querySelector(".home-panel-button");
+        const preview = document.getElementById("collectorPreview");
+
+        if (collectorTitle) collectorTitle.textContent = "下一站去哪";
+        if (collectorText) collectorText.innerHTML = "先留下想去的地方，<br>以後再慢慢安排。";
+        if (collectorButton) collectorButton.textContent = "打開收藏冊 →";
+        if (panelButton) panelButton.textContent = "打開收藏冊 →";
+
+        if (preview) {
+          const heading = preview.querySelector("h4");
+          const desc = preview.querySelector("p");
+
+          if (heading) heading.textContent = "慢慢挑";
+          if (desc) {
+            if (desc.textContent && desc.textContent.trim() && !desc.textContent.includes("旅行不急著決定")) {
+              desc.textContent = "旅行不急著決定，先收進收藏冊。";
+            } else if (!desc.textContent || !desc.textContent.trim()) {
+              desc.textContent = "旅行不急著決定，先收進收藏冊。";
+            }
+          }
+        }
+      };
+
+      window.addEventListener("DOMContentLoaded", () => {
+        syncHomeCopy();
+        const preview = document.getElementById("collectorPreview");
+        if (preview) {
+          new MutationObserver(() => syncHomeCopy()).observe(preview, { childList: true, subtree: true });
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
